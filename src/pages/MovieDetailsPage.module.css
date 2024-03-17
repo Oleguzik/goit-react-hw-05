@@ -1,0 +1,57 @@
+.info {
+  display: flex;
+  gap: 22px;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+}
+
+.poster {
+  width: 20vw;
+  height: 30vw;
+
+  @media (max-width: 900px) {
+    width: 40vw;
+    height: 60vw;
+  }
+  @media (max-width: 500px) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.back {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  max-width: fit-content;
+}
+.arrow {
+  color: #f5c518;
+}
+.addInfo {
+  padding-left: 18px;
+}
+.addInfo > li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  display: flex;
+  max-height: 2.4em;
+  overflow: hidden;
+  border: none;
+  padding-left: 0.75rem;
+  position: relative;
+}
+
+h3::before {
+  background: #f5c518;
+  content: "";
+  margin-left: -0.75rem;
+  align-self: flex-start;
+  position: absolute;
+  height: 100%;
+  width: 4px;
+}
