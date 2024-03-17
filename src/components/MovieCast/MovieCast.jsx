@@ -7,7 +7,7 @@ import Error from "../Error/Error";
 import Loader from "../Loader/Loader";
 import css from "./MovieCast.module.css";
 
-export default function MoviesCast() {
+function MovieCast() {
   const { movieId } = useParams();
   const { data, isLoad, error } = useFetch({
     component: "movieCast",
@@ -42,3 +42,5 @@ export default function MoviesCast() {
     </>
   );
 }
+
+export default MovieCast;
