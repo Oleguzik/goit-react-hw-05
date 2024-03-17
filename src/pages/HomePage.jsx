@@ -1,9 +1,9 @@
 import { useLocation } from "react-router-dom";
-import useFetch from "../Components/useFetch";
+import useFetch from "../components/useFetch";
 
-import MovieList from "../Components/MovieList/MovieList";
-import Error from "../Components/Error/Error";
-import Loader from "../Components/Loader/Loader";
+import MovieList from "../components/MovieList/MovieList";
+import Error from "../components/Error/Error";
+import Loader from "../components/Loader/Loader";
 
 function HomePage() {
   const location = useLocation();

@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { useLocation, useSearchParams } from "react-router-dom";
 
-import Form from "../Components/Form/Form";
+import Form from "../components/Form/Form";
 
-import useFetch from "../Components/useFetch";
+import useFetch from "../components/useFetch";
 
-import MovieList from "../Components/MovieList/MovieList";
-import Error from "../Components/Error/Error";
-import Loader from "../Components/Loader/Loader";
+import MovieList from "../components/MovieList/MovieList";
+import Error from "../components/Error/Error";
+import Loader from "../components/Loader/Loader";
 
 function MoviesPage() {
   const location = useLocation();

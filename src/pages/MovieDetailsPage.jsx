@@ -4,11 +4,11 @@ import { BiArrowBack } from "react-icons/bi";
 import { BsPersonVideo2 } from "react-icons/bs";
 import { BsLayoutTextSidebarReverse } from "react-icons/bs";
 
-import sourceAPI from "../Components/sourceApi";
-import useFetch from "../Components/useFetch";
+import sourceAPI from "../components/sourceApi.js";
+import useFetch from "../components/useFetch.js";
 
-import Error from "../Components/Error/Error";
-import Loader from "../Components/Loader/Loader";
+import Error from "../components/Error/Error";
+import Loader from "../components/Loader/Loader";
 
 import css from "./MovieDetailsPage.module.css";
 
