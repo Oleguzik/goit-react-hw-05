@@ -1,0 +1,56 @@
+.list {
+  column-gap: 16px;
+  row-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
+.item {
+  max-width: 10vw;
+}
+
+.photo {
+  width: 20vw;
+  height: 50vw;
+}
+.nameText {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.charText {
+  margin: 0;
+}
+
+.item > img {
+  display: inline-block;
+  line-height: 2;
+  text-align: center;
+  min-width: 160px;
+  height: 230px;
+  position: relative;
+}
+
+.item > img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #eef1f4;
+  position: absolute;
+  top: 50%;
+  left: -2px;
+  transform: translateY(-50%);
+}
+
+.item > img::after {
+  content: "\2639""\000A""no photo";
+  font-size: 20px;
+  color: #bababa;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
